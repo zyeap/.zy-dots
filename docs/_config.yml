@@ -19,7 +19,7 @@
 # in the templates via {{ site.myvariable }}.
 
 title: "Dotfile Docs"
-description: Dotfile documentation site
+description: Zyeap's personal dotfile documentation site
 baseurl: "/" # the subpath of your site, e.g. /blog
 url: "https://zyeap.github.io/.zy-dots/" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  zyeap

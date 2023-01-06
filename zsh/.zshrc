@@ -29,5 +29,6 @@ alias gitconfig='lvim ~/.gitconfig'
 alias j='jump'
 alias sf='fd --type f --hidden --exclude .git | fzf-tmux -p --reverse | xargs lvim'
 alias gfob='git fetch origin && git pull --rebase'
+alias icat="kitty +kitten icat"
 eval "$(starship init zsh)"
 # export PATH=$PATH:~/.config/diff-so-fancy

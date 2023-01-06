@@ -4,15 +4,13 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+This site holds installation and setup documentation for my personal dotfiles! 
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
+The machine I'm using a ThinkPad X220 with Arch Linux.
 
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
+  ![Personal neofetch](assets/images/anyafetch.png)
 
+I'm using this site to learn static site deployment with [Jekyll](https://jekyllrb.com/) and [Github Pages](https://pages.github.com/).
 
-[jekyll-organization]: https://github.com/jekyll
+**These dotfiles are intended to be used as a reference for others.   
+Please do not use these dotfiles unless you are 100% sure about what the configuration does.**

@@ -33,7 +33,7 @@ Configuration/Plugin manager: [oh-my-zsh][omz-page]
 - [zsh-autosuggestions][omz-autosugg]
 - [zsh-syntax-highlighting][omz-synhighlight]
 
-  ![Zsh plugins](/assets/images/zsh.png)
+  ![Zsh plugins]({{ site.baseurl }}/assets/images/zsh.png)
 
 ### Configuring the Terminal
 Kitty's default configuration file is located at `~/.config/kitty/kitty.conf`
@@ -56,7 +56,7 @@ Font: [Source Code Pro Nerd Font][saucecodepro-nf]
 
 WIP
 
-  ![Kitty terminal](/assets/images/kitty-terminal.png)
+  ![Kitty terminal]({{ site.baseurl }}/assets/images/kitty-terminal.png)
 
 
 [pacman-arch]: https://wiki.archlinux.org/title/pacman

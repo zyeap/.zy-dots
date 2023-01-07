@@ -7,7 +7,7 @@ export PATH=/home/zat/.local/bin:$PATH
 export PATH=/home/zat/.local/share/gem/ruby/3.0.0/bin:$PATH
 export DOTFILES="$HOME/.zy-dots"
 
-ZSH_THEME="robbyrussell"
+# ZSH_THEME="robbyrussell"
 
 plugins=(
         git

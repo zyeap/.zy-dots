@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "3. Configuring Neovim"
-date:   2023-01-06 12:33:32 -0800
+date:   2023-01-13 12:33:32 -0800
 categories: jekyll update
 ---
 
@@ -121,6 +121,11 @@ end)
 
 To install the plugin, run `:PackerSync` within neovim.
 
+Now, create the following file: `~/.config/nvim/lua/nvim-tree-config/init.lua`
+  - Add this line: `require("nvim-tree").setup()`
+  - Add `require('nvim-tree-config')` to `~/.config/nvim/init.lua`
+
+
 Now if you run `:NvimTreeToggle`, you will see a file explorer open on the side.
 
 ![nvimtree]({{ site.baseurl }}/assets/images/nvimtree.png)
@@ -147,6 +152,27 @@ map('n', '<leader>e', ':NvimTreeToggle<CR>', opts)
   ```
   - Add `require('mappings')` to `~/.config/nvim/init.lua`
   - Now, to toggle nvim tree, we can press spacebar + "e"
+
+The file structure should look like this now
+```
+├── init.lua
+├── lua
+│   ├── mappings
+│   │   └── init.lua
+│   ├── nvim-tree-config
+│   │   └── init.lua
+│   ├── packer-config
+│   │   └── init.lua
+│   ├── settings
+│   │   └── init.lua
+└── plugin
+    └── packer_compiled.lua
+```
+---  
+
+For more details on my setup, please see: [https://github.com/zyeap/.zy-dots/tree/main/nvim/.config/nvim](https://github.com/zyeap/.zy-dots/tree/main/nvim/.config/nvim)
+
+![lua book]({{ site.baseurl }}/assets/images/Rin_Shima_Programming_In_Lua.png)
 
 
 [nvim-page]: https://neovim.io/

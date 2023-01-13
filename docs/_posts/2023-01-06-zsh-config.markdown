@@ -44,6 +44,8 @@ plugins=(
 Aliases are an easy way to use long/hard to remember commands.  
 Think of them like nicknames for commands!
 
+To use an alias, add it to your `~/.zshrc` file  
+
 For example, we can shorten the `jump` command to `j` with the following alias:  
 ```
 alias j='jump'
@@ -53,6 +55,10 @@ Another alias I use pretty frequently is to do a fetch origin and pull from a re
 ```
 alias gfob='git fetch origin && git pull --rebase'
 ```  
+
+---
+
+### Listing files
 
 `ls` is one of the commands I use the most when working in the terminal:
   ![default ls]({{ site.baseurl }}/assets/images/default-ls.png)
@@ -64,18 +70,30 @@ The default `ls` works well, but can be made better.
 
 ![exa]({{ site.baseurl }}/assets/images/exa.png)  
 
+---
+
+### Searching for files
+
 Another issue I run into sometimes is searching for specific files within a project directory  
 
 A couple tools help solve this issue: 
-- `fd`
-- `fzf`
-- `vim`
+- `fd` - [https://github.com/sharkdp/fd](https://github.com/sharkdp/fd)
+- `fzf` - [https://github.com/junegunn/fzf](https://github.com/junegunn/fzf)
+- [Vim][vim-site]
+- Installation: `pacman -S fd fzf vim`
 
 ```
-alias sf='fd --type f --hidden --exclude .git | fzf-tmux -p --reverse | xargs lvim'
+alias sf='fd --type f --hidden --exclude .git | fzf-tmux -p --reverse | xargs vim'
 ```
+
+We use fd to interactively find all files within our current working directory, then pipe the output into fzf-tmux to create a popup fuzzy finder.  
+
+Piping the output into `xargs vim` allows us to open the file we select.
+
+![sf]({{ site.baseurl }}/assets/images/find_files.png)
 
 [omz-page]: https://ohmyz.sh/
 [omz-autosugg]: https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md#oh-my-zsh
 [omz-synhighlight]: https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md#oh-my-zsh
 [exa-site]: https://the.exa.website/
+[vim-site]: https://www.vim.org/

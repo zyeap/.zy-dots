@@ -1,0 +1,45 @@
+---
+---
+
+@import "minima";
+
+body { 
+  color: #f8f8f2;
+  background-color: #282a36;
+}
+
+.site-title, .site-title:visited {
+  color: #ff79c6;
+}
+
+.site-nav .page-link {
+  color: #ff79c6;
+}
+
+.post-title {
+  color: #bd93f9;
+}
+
+.post-meta {
+  color: #50fa7b;
+}
+
+pre, code {
+  background-color: #111;
+}
+
+.highlighter-rouge .highlight { 
+  background: #111; 
+}
+
+a, a:visited, a:hover {
+  color: #8be9fd;
+}
+
+.footer-heading {
+  color: #ffb86c;
+}
+.svg-icon {
+  fill: #f8f8f2;
+}
+

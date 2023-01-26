@@ -1,6 +1,6 @@
 require'nvim-treesitter.configs'.setup {
     -- A list of parser names, or "all"
-    ensure_installed = {"python", "go", "lua"},
+    ensure_installed = {"python", "rust", "lua", "markdown"},
 
     -- Install parsers synchronously (only applied to `ensure_installed`)
     sync_install = false,
@@ -23,16 +23,6 @@ require'nvim-treesitter.configs'.setup {
             enable = true,
             keymaps = {
                 smart_rename = "grr",
-            },
-        },
-        navigation = {
-            enable = true,
-            keymaps = {
-                goto_definition = "gnd",
-                list_definitions = "gnD",
-                list_definitions_toc = "gO",
-                goto_next_usage = "gnu",
-                goto_previous_usage = "gpu",
             },
         },
     },

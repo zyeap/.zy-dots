@@ -22,12 +22,12 @@ source $ZSH/oh-my-zsh.sh
 # --------------------------------------
 # USER DEFINED ALIASES
 alias l="exa -lahF --icons --git"
-alias vim='lvim'
-alias zshrc='lvim ~/.zshrc'
-alias tmuxconf='lvim ~/.tmux.conf'
-alias gitconfig='lvim ~/.gitconfig'
+alias vim='nvim'
+alias zshrc='nvim ~/.zshrc'
+alias tmuxconf='nvim ~/.tmux.conf'
+alias gitconfig='nvim ~/.gitconfig'
 alias j='jump'
-alias sf='fd --type f --hidden --exclude .git | fzf-tmux -p --reverse | xargs lvim'
+alias sf='fd --type f --hidden --exclude .git | fzf-tmux -p --reverse | xargs nvim'
 alias gfob='git fetch origin && git pull --rebase'
 alias icat="kitty +kitten icat"
 eval "$(starship init zsh)"

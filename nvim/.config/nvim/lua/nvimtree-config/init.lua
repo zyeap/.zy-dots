@@ -22,6 +22,7 @@ require'nvim-tree'.setup {
     },
     renderer = {
         icons = {
+            symlink_arrow = " > ",
             show = {
                 git = false
             }

@@ -1,0 +1,8 @@
+---
+layout: post
+title:  "6. Managing configuration with GNU Stow"
+date:   2023-01-26 12:35:32 -0800
+categories: jekyll update
+---
+
+![mew c++ book]({{ site.baseurl }}/assets/images/Mew.png)

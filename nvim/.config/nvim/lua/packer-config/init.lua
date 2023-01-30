@@ -35,6 +35,7 @@ require ('packer').startup(function(use)
   use 'L3MON4D3/LuaSnip' -- Snippets plugin
   use 'onsails/lspkind.nvim' -- icons
   use 'j-hui/fidget.nvim' -- LSP loading info
+  use 'jose-elias-alvarez/null-ls.nvim' -- LSP diagnostics, code actions, formatting
 
   -- Treesitter config plugins
   use {

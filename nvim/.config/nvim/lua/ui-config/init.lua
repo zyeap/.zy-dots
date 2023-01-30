@@ -54,6 +54,13 @@ ins_right {
   color = { fg = '#ffffff', gui = 'bold' },
 }
 
+ins_right {
+  function()
+    local shiftwidth = vim.api.nvim_buf_get_option(0, 'shiftwidth')
+    return "" .. " " .. shiftwidth
+  end
+}
+
 require('lualine').setup(lualine_config)
 
 -- Gitsigns config

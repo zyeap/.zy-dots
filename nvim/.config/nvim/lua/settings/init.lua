@@ -79,6 +79,10 @@ require("nvim-autopairs").setup {}
 
 -- Commenting
 require("Comment").setup {
+	toggler = {
+		line = '<leader>/',
+		block = '<leader>-'
+	},
 	opleader = {
 		line = '<leader>/',
 		block = '<leader>-'

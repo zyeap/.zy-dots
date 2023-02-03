@@ -6,3 +6,65 @@ categories: jekyll update
 ---
 
 ![mew c++ book]({{ site.baseurl }}/assets/images/Mew.png)
+
+[GNU Stow][gnu-stow-page] is a symlink manager that can be very useful for consolidating your config files, instead of having them loosely scattered across your home directory.
+
+Here's a good guide I used to learn how Stow works: [https://systemcrafters.net/managing-your-dotfiles/using-gnu-stow/](https://systemcrafters.net/managing-your-dotfiles/using-gnu-stow/)
+
+This is the process I follow to create a dotfile directory and utilize Stow:
+1. Create a dotfile directory under ~  
+  a. ex: ~/.zy-dots
+2. Within the dotfile directory, create subdirectories for each application  
+  a. `mkdir zsh tmux nvim kitty`  
+  b. Each of these directories essentially mirrors your home directory
+3. For config files that are normally under ~/.config, I use this directory format  
+  a. `mkdir ~/.zy-dots/nvim/.config`  
+4. Place the configuration files within the application directory  
+  a. `mv ~/.zshrc ~/.zy-dots/zsh`  
+  b. `mv ~/.config/nvim ~/.zy-dots/nvim/.config`
+5. The dotfile directory should now hold your configuration files  
+
+  ```
+  ~/.zy-dots
+
+    ├── kitty
+  │   └── .config
+  │       └── kitty
+  │           ├── diff.conf
+  │           ├── dracula.conf
+  │           └── kitty.conf
+  ├── nvim
+  │   └── .config
+  │       └── nvim
+  │           ├── init.lua
+  │           ├── lua
+  │           │   ├── lsp-config
+  │           │   │   ├── language-servers.lua
+  │           │   │   ├── null-ls.lua
+  │           │   │   └── nvim-cmp.lua
+  │           │   ├── nvimtree-config
+  │           │   │   └── init.lua
+  │           │   ├── packer-config
+  │           │   │   └── init.lua
+  │           │   ├── settings
+  │           │   │   └── init.lua
+  │           │   ├── treesitter-config
+  │           │   │   └── init.lua
+  │           │   └── ui-config
+  │           │       └── init.lua
+  │           └── plugin
+  │               └── packer_compiled.lua
+  ├── tmux
+  │   └── .tmux.conf
+  └── zsh
+      └── .zshrc
+  ```
+  To link the configuration, run `stow <app directory name>`  
+  ex: `stow tmux`
+
+We should see the config symlinked now:
+![stow-example]({{ site.baseurl }}/assets/images/stow-example.png)
+
+
+[gnu-stow-page]: https://www.gnu.org/software/stow/
+[stow-learning-guide]: https://systemcrafters.net/managing-your-dotfiles/using-gnu-stow/

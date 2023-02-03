@@ -49,7 +49,7 @@ set -g bell-action none
 
 Here are some additional configurations I use for pane and window navigation
 ```
-# first window starts from 1 instrad of 0
+# first window starts from 1 instead of 0
 set -g base-index 1
 
 # automatic renaming and renumbering

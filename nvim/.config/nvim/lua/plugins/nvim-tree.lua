@@ -1,5 +1,3 @@
--- examples for your init.lua
-
 -- disable netrw at the very start of your init.lua (strongly advised)
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
@@ -14,7 +12,13 @@ local list = {
     { key = "u", action = "dir_up" },
 }
 
-require'nvim-tree'.setup {
+return {
+  "kyazdani42/nvim-tree.lua",
+  cmd = "NvimTree",
+  keys = {
+    { "<leader>e", "<cmd>NvimTreeToggle<cr>", desc = "NvimTreeToggle"}
+  },
+  opts = {
     view = {
         mappings = {
             list = list
@@ -28,4 +32,5 @@ require'nvim-tree'.setup {
             }
         }
     }
+  }
 }

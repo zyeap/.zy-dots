@@ -38,16 +38,8 @@ map('n', '<leader>q', ':q<CR>', opts)
 map('n', '<leader>c', ':bd<CR>', opts)
 map('n', '<leader>h', ':noh<CR>', opts)
 
--- telescope mappings
-map('n', '<leader>f', ':Telescope find_files<CR>', opts)
-map('n', '<leader>s', ':Telescope live_grep<CR>', opts)
-map('n', '<leader>gc', ':Telescope git_commits<CR>', opts)
-map('n', '<leader>gb', ':Telescope git_branches<CR>', opts)
-map('n', '<leader>gs', ':Telescope git_status<CR>', opts)
-
 -- Other plugin mappings
-map('n', '<leader>e', ':NvimTreeToggle<CR>', opts)
-map('n', '<leader>ps', ':PackerSync<CR>', opts)
+map('n', '<leader>L', ':Lazy<CR>', opts)
 map('n', '<leader>u', ':UndotreeToggle<CR>', opts)
 map('n', '<S-l>', ':BufferLineCycleNext<CR>', opts)
 map('n', '<S-h>', ':BufferLineCyclePrev<CR>', opts)
@@ -80,11 +72,22 @@ require("nvim-autopairs").setup {}
 -- Commenting
 require("Comment").setup {
 	toggler = {
-		line = '<leader>/',
-		block = '<leader>-'
+		line='<leader>/',
+		block='<leader>-'
 	},
 	opleader = {
 		line = '<leader>/',
 		block = '<leader>-'
 	}
+}
+
+-- Gitsigns config
+require('gitsigns').setup {
+  signs = {
+    add = { text = '+' },
+    change = { text = '~' },
+    delete = { text = '_' },
+    topdelete = { text = '‾' },
+    changedelete = { text = '~' },
+  },
 }

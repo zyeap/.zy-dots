@@ -54,6 +54,7 @@ local on_attach = function(_, bufnr)
   end, { desc = 'Format current buffer with LSP' })
 end
 
+
 local border = {
       {"🭽", "FloatBorder"},
       {"▔", "FloatBorder"},
@@ -77,7 +78,6 @@ capabilities = require('cmp_nvim_lsp').default_capabilities(capabilities)
 local servers = {
     pyright,
     rust_analyzer,
-    marksman,
     sumneko_lua = {
       Lua = {
 	workspace = { checkThirdParty = false },
@@ -97,7 +97,7 @@ require('mason').setup({
             package_uninstalled = "o"
         }
     }
-})
+	})
 
 -- Setup fidget for LSP loading info
 require('fidget').setup()
@@ -119,6 +119,7 @@ mason_lspconfig.setup_handlers {
     }
   end,
 }
+
 
 -- border config for LSP popups 
 local _border = "single"

@@ -1,7 +1,5 @@
-require("packer-config")
+require("lazy-config")
 require("impatient")
-require("ui-config")
-require("nvimtree-config")
 require("lsp-config.language-servers")
 require("lsp-config.nvim-cmp")
 require("lsp-config.null-ls")

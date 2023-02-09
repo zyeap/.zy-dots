@@ -1,23 +1,3 @@
--- Top bufferline
-require('bufferline').setup{
-  options = {
-    offsets = {
-      {
-        filetype = "undotree",
-        text = "Undotree",
-        highlight = "PanelHeading",
-        padding = 1,
-      },
-      {
-        filetype = "NvimTree",
-        text = "Explorer",
-        highlight = "PanelHeading",
-        padding = 1,
-      },
-    }
-  }
-}
-
 -- Bottom status bar
 local lualine_config = {
   options = {
@@ -30,12 +10,10 @@ local lualine_config = {
   },
 }
 
--- Helper function for lualine
 local function ins_right(component)
   table.insert(lualine_config.sections.lualine_x, component)
 end
 
--- LSP info for lualine
 ins_right {
   function()
     local msg = '[LSP Inactive]'
@@ -62,15 +40,7 @@ ins_right {
   end
 }
 
-require('lualine').setup(lualine_config)
-
--- Gitsigns config
-require('gitsigns').setup {
-  signs = {
-    add = { text = '+' },
-    change = { text = '~' },
-    delete = { text = '_' },
-    topdelete = { text = '‾' },
-    changedelete = { text = '~' },
-  },
+return {
+  "nvim-lualine/lualine.nvim",
+  opts = lualine_config
 }

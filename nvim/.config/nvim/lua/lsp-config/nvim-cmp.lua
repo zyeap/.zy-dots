@@ -50,7 +50,7 @@ cmp.setup {
       before = function (entry, vim_item)
         return vim_item
       end
-    })
+    }),
   },
   window = {
     completion = cmp.config.window.bordered(),

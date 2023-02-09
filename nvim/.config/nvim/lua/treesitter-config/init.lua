@@ -1,6 +1,6 @@
 require'nvim-treesitter.configs'.setup {
     -- A list of parser names, or "all"
-    ensure_installed = {"python", "rust", "lua", "markdown"},
+    ensure_installed = {"python", "rust", "lua"},
 
     -- Install parsers synchronously (only applied to `ensure_installed`)
     sync_install = false,
@@ -11,7 +11,7 @@ require'nvim-treesitter.configs'.setup {
     highlight = {
         -- `false` will disable the whole extension
         enable = true,
-        disable = { "dockerfile" },
+        disable = { "dockerfile", "sql", "markdown"},
         additional_vim_regex_highlighting = false,
     },
     refactor = {

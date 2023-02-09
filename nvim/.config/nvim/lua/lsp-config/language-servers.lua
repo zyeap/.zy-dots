@@ -89,7 +89,15 @@ local servers = {
 require('neodev').setup()
 
 -- Setup mason so it can manage external tooling
-require('mason').setup()
+require('mason').setup({
+    ui = {
+        icons = {
+            package_installed = "✓",
+            package_pending = "~",
+            package_uninstalled = "o"
+        }
+    }
+})
 
 -- Setup fidget for LSP loading info
 require('fidget').setup()

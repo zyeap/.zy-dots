@@ -78,7 +78,7 @@ capabilities = require('cmp_nvim_lsp').default_capabilities(capabilities)
 local servers = {
     pyright,
     rust_analyzer,
-    sumneko_lua = {
+    lua_ls = {
       Lua = {
 	workspace = { checkThirdParty = false },
 	telemetry = { enable = false },

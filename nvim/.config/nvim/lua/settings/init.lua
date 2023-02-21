@@ -35,7 +35,7 @@ map('', '<C-l>', '<C-w>l', opts)
 
 map('n', '<C-s>', ':w<CR>', opts)
 map('n', '<leader>q', ':q<CR>', opts)
-map('n', '<leader>c', ':bd<CR>', opts)
+map('n', '<leader>x', ':bd<CR>', opts)
 map('n', '<leader>h', ':noh<CR>', opts)
 
 -- Other plugin mappings

@@ -36,8 +36,8 @@ require("lazy").setup("plugins", {
 			task = "✔ ",
 			list = {
 				"●",
-				"➜",
-				"★",
+				">",
+				"*",
 				"‒",
 			},
 		},

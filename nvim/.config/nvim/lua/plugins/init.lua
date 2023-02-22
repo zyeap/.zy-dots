@@ -1,17 +1,9 @@
 return {
-
-  -- Startup optimization
-   'lewis6991/impatient.nvim',
-   'nathom/filetype.nvim',
-
   -- UI/efficiency related plugins
    'Mofiqul/dracula.nvim',
    'kyazdani42/nvim-web-devicons',
-   'tpope/vim-sleuth', -- Detect tabstop and shiftwidth automatically
    'windwp/nvim-autopairs', -- Autocomplete brackets/parentheses
-   'mbbill/undotree',
    'lewis6991/gitsigns.nvim',
-   'numToStr/Comment.nvim',
 
   -- LSP configuration plugins
    'neovim/nvim-lspconfig',

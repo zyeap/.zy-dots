@@ -1,14 +1,15 @@
-local null_ls = require('null-ls')
+local null_ls = require("null-ls")
 
 local formatting = null_ls.builtins.formatting
 
 -- sources for formatting, must be installed locally
 local sources = {
-    formatting.eslint,
-    formatting.autopep8,
-    formatting.stylua,
+	formatting.eslint,
+	formatting.autopep8,
+	formatting.stylua,
+  formatting.yamlfmt
 }
 
 null_ls.setup({
-    sources = sources
+	sources = sources,
 })

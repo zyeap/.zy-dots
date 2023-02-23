@@ -12,7 +12,7 @@ set.smartcase = true
 
 set.splitbelow = true
 set.splitright = true
-set.wrap = true
+set.wrap = false
 
 set.cursorline = true
 set.number = true

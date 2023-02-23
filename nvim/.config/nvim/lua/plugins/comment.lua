@@ -1,6 +1,5 @@
 return {
 	"numToStr/Comment.nvim",
-  lazy = true,
 	opts = {
 		toggler = {
 			line = "<leader>/",

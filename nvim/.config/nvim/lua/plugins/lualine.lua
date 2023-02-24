@@ -42,5 +42,6 @@ ins_right {
 
 return {
   "nvim-lualine/lualine.nvim",
+  event = "VeryLazy",
   opts = lualine_config
 }

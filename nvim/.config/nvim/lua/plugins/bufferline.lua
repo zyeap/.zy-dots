@@ -11,9 +11,9 @@ return {
 					padding = 1,
 				},
 				{
-					filetype = "NvimTree",
-					text = "Explorer",
-					highlight = "PanelHeading",
+					filetype = "neo-tree",
+					text = "Neo-tree",
+					highlight = "Directory",
 					padding = 1,
 				},
 			},

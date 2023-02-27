@@ -21,7 +21,7 @@ set.fileencoding = "utf-8"
 set.termguicolors = true
 set.mouse = "a"
 
-set.clipboard = "unnamed"
+set.clipboard = "unnamedplus"
 set.undofile = true
 
 -- Mappings

@@ -31,13 +31,4 @@ return {
 	"onsails/lspkind.nvim", -- icons
 	"j-hui/fidget.nvim", -- LSP loading info
 	"jose-elias-alvarez/null-ls.nvim", -- LSP diagnostics, code actions, formatting
-
-	-- Treesitter config plugins
-	{
-		"nvim-treesitter/nvim-treesitter",
-		build = function()
-			pcall(require("nvim-treesitter.install").update({ with_sync = true }))
-		end,
-	},
-	"nvim-treesitter/nvim-treesitter-refactor",
 }

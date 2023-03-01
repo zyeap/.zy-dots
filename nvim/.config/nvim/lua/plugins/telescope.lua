@@ -1,15 +1,14 @@
 return {
   "nvim-telescope/telescope.nvim",
-  event = "VeryLazy",
   cmd = "Telescope",
   branch = "0.1.x",
   keys = {
-    {'<leader>ff', '<CMD>Telescope find_files theme=dropdown<CR>', desc = "find files"},
-    {'<leader>fs', '<CMD>Telescope live_grep theme=dropdown<CR>', desc = "find string"},
-    {'<leader>fb', '<CMD>Telescope file_browser theme=dropdown<CR>', desc = "file browser"},
-    {'<leader>gc', '<CMD>Telescope git_commits theme=dropdown<CR>', desc = "find commits"},
-    {'<leader>gb', '<CMD>Telescope git_branches theme=dropdown<CR>', desc = "find branches"},
-    {'<leader>gs', '<CMD>Telescope git_status theme=dropdown<CR>', desc = "find git status"},
+    {'<leader>ff', '<CMD>Telescope find_files <CR>', desc = "find files"},
+    {'<leader>fs', '<CMD>Telescope live_grep <CR>', desc = "find string"},
+    {'<leader>fb', '<CMD>Telescope file_browser <CR>', desc = "file browser"},
+    {'<leader>gc', '<CMD>Telescope git_commits <CR>', desc = "find commits"},
+    {'<leader>gb', '<CMD>Telescope git_branches <CR>', desc = "find branches"},
+    {'<leader>gs', '<CMD>Telescope git_status <CR>', desc = "find git status"},
   },
   dependencies = {
     "nvim-lua/plenary.nvim"

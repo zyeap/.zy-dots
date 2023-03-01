@@ -62,9 +62,6 @@ autocmd("FileType", {
 -- Colorscheme
 vim.cmd([[colorscheme dracula]])
 
--- Autopairs
-require("nvim-autopairs").setup({})
-
 -- Gitsigns config
 require("gitsigns").setup({
 	signs = {

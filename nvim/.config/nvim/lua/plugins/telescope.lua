@@ -11,7 +11,8 @@ return {
     {'<leader>gs', '<CMD>Telescope git_status <CR>', desc = "find git status"},
   },
   dependencies = {
-    "nvim-lua/plenary.nvim"
+    "nvim-lua/plenary.nvim",
+    "nvim-telescope/telescope-file-browser.nvim"
   },
   config = function()
     require("telescope").setup({
@@ -22,12 +23,6 @@ return {
         "__pycache__"
       }
     },
-    extensions = {
-      file_browser = {
-        hijack_netrw = true,
-      }
-    }
   })
-  require("telescope").load_extension("file_browser")
   end
 }

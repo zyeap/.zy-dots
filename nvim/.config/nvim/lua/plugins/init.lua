@@ -3,21 +3,21 @@ return {
 	"Mofiqul/dracula.nvim",
 	"kyazdani42/nvim-web-devicons",
 	"lewis6991/gitsigns.nvim",
-  {
-    "windwp/nvim-autopairs", -- Autocomplete brackets/parentheses
-    event = "InsertEnter",
-    config = true
-  },
-  {
-    "Vimjas/vim-python-pep8-indent", -- pep8 python indentation
-    ft = "python",
-  },
-  {
-   'mbbill/undotree', -- view past undo changes in side tree view
-    keys = {
-      {'<leader>u',  ':UndotreeToggle<CR>', desc = 'Undo tree toggle'}
-    }
-  },
+	{
+		"windwp/nvim-autopairs", -- Autocomplete brackets/parentheses
+		event = "InsertEnter",
+		config = true,
+	},
+	{
+		"Vimjas/vim-python-pep8-indent", -- pep8 python indentation
+		ft = "python",
+	},
+	{
+		"mbbill/undotree", -- view past undo changes in side tree view
+		keys = {
+			{ "<leader>u", ":UndotreeToggle | UndotreeFocus<CR>", desc = "Undo tree toggle", silent = true },
+		},
+	},
 
 	-- LSP configuration plugins
 	"neovim/nvim-lspconfig",

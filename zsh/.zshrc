@@ -22,6 +22,7 @@ source $ZSH/oh-my-zsh.sh
 # --------------------------------------
 # USER DEFINED ALIASES
 alias l="exa -lahF --icons --git"
+alias v='nvim'
 alias vim='nvim'
 alias zshrc='nvim ~/.zshrc'
 alias tmuxconf='nvim ~/.tmux.conf'

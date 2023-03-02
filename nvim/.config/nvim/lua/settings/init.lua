@@ -48,19 +48,9 @@ map("n", "<leader>M", ":Mason<CR>", opts)
 map("n", "<S-l>", ":BufferLineCycleNext<CR>", opts)
 map("n", "<S-h>", ":BufferLineCyclePrev<CR>", opts)
 
--- Autocommands
-local autocmd = vim.api.nvim_create_autocmd
-
-autocmd("FileType", {
-	pattern = "lua",
-	callback = function()
-		vim.opt_local.shiftwidth = 2
-		vim.opt_local.tabstop = 2
-	end,
-})
-
 -- Colorscheme
 vim.cmd([[colorscheme dracula]])
+vim.cmd[[highlight IndentBlanklineContextChar guifg=#ff79c6 gui=nocombine]]
 
 -- Gitsigns config
 require("gitsigns").setup({

@@ -1,9 +1,10 @@
 -- General settings
 local set = vim.opt
 
-set.tabstop = 4
 set.shiftwidth = 4
+set.softtabstop = 4
 set.expandtab = true
+set.smarttab = true
 
 set.hlsearch = true
 set.incsearch = true
@@ -50,7 +51,7 @@ map("n", "<S-h>", ":BufferLineCyclePrev<CR>", opts)
 
 -- Colorscheme
 vim.cmd([[colorscheme dracula]])
-vim.cmd[[highlight IndentBlanklineContextChar guifg=#ff79c6 gui=nocombine]]
+vim.cmd([[highlight IndentBlanklineContextChar guifg=#ff79c6 gui=nocombine]])
 
 -- Gitsigns config
 require("gitsigns").setup({

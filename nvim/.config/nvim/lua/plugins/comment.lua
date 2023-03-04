@@ -1,9 +1,9 @@
 return {
 	"numToStr/Comment.nvim",
-  keys = {
-    {"<leader>/"},
-    {"<leader>-"}
-  },
+	keys = {
+		{ "<leader>/" },
+		{ "<leader>-" },
+	},
 	opts = {
 		toggler = {
 			line = "<leader>/",

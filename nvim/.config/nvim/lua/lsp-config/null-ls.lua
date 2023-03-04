@@ -6,7 +6,7 @@ local formatting = null_ls.builtins.formatting
 local sources = {
 	formatting.autopep8,
 	formatting.stylua,
-  formatting.yamlfmt
+	formatting.yamlfmt,
 }
 
 null_ls.setup({

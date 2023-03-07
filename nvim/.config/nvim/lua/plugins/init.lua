@@ -13,6 +13,10 @@ return {
 		ft = "python",
 	},
 	{
+		"tpope/vim-sleuth",
+		event = { "BufReadPost", "BufNewFile" },
+	},
+	{
 		"mbbill/undotree", -- view past undo changes in side tree view
 		keys = {
 			{ "<leader>u", ":UndotreeToggle | UndotreeFocus<CR>", desc = "Undo tree toggle", silent = true },

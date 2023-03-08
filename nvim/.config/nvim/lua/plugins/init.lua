@@ -1,25 +1,41 @@
 return {
 	-- UI/efficiency related plugins
 	"Mofiqul/dracula.nvim",
-	"kyazdani42/nvim-web-devicons",
-	"lewis6991/gitsigns.nvim",
+	"sainnhe/everforest",
+	{
+		"kyazdani42/nvim-web-devicons",
+		event = "VeryLazy",
+	},
+	{
+		"lewis6991/gitsigns.nvim",
+		event = "VeryLazy",
+		opts = {
+			signs = {
+				add = { text = "+" },
+				change = { text = "~" },
+				delete = { text = "_" },
+				topdelete = { text = "‾" },
+				changedelete = { text = "~" },
+			},
+		},
+	},
 	{
 		"windwp/nvim-autopairs", -- Autocomplete brackets/parentheses
 		event = "InsertEnter",
 		config = true,
 	},
 	{
-		"Vimjas/vim-python-pep8-indent", -- pep8 python indentation
-		ft = "python",
-	},
-	{
 		"tpope/vim-sleuth",
 		event = { "BufReadPost", "BufNewFile" },
 	},
 	{
+		"Vimjas/vim-python-pep8-indent", -- pep8 python indentation
+		ft = "python",
+	},
+	{
 		"mbbill/undotree", -- view past undo changes in side tree view
 		keys = {
-			{ "<leader>u", ":UndotreeToggle | UndotreeFocus<CR>", desc = "Undo tree toggle", silent = true },
+			{ "<leader>u", ":UndotreeToggle<CR>", desc = "Undo tree toggle" },
 		},
 	},
 

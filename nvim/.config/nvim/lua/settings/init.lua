@@ -1,5 +1,6 @@
 -- General settings
 local set = vim.opt
+local global = vim.g
 
 set.hlsearch = true
 set.incsearch = true
@@ -24,8 +25,8 @@ set.undofile = true
 local map = vim.api.nvim_set_keymap
 local opts = { noremap = true, silent = true }
 
-vim.g.mapleader = " "
-vim.g.maplocalleader = " "
+global.mapleader = " "
+global.maplocalleader = " "
 
 -- syntax: mode, keybinding, command, options
 map("", "<C-h>", "<C-w>h", opts)
@@ -45,16 +46,6 @@ map("n", "<S-l>", ":BufferLineCycleNext<CR>", opts)
 map("n", "<S-h>", ":BufferLineCyclePrev<CR>", opts)
 
 -- Colorscheme
-vim.cmd([[colorscheme dracula]])
-vim.cmd([[highlight IndentBlanklineContextChar guifg=#ff79c6 gui=nocombine]])
-
--- Gitsigns config
-require("gitsigns").setup({
-	signs = {
-		add = { text = "+" },
-		change = { text = "~" },
-		delete = { text = "_" },
-		topdelete = { text = "‾" },
-		changedelete = { text = "~" },
-	},
-})
+global.everforest_background = "soft"
+vim.cmd([[colorscheme everforest]])
+vim.cmd([[highlight IndentBlanklineContextChar guifg=#a7c080 gui=nocombine]])

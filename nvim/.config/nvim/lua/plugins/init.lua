@@ -1,6 +1,5 @@
 return {
 	-- UI/efficiency related plugins
-	"Mofiqul/dracula.nvim",
 	"sainnhe/everforest",
 	{
 		"kyazdani42/nvim-web-devicons",
@@ -35,7 +34,7 @@ return {
 	{
 		"mbbill/undotree", -- view past undo changes in side tree view
 		keys = {
-			{ "<leader>u", ":UndotreeToggle<CR>", desc = "Undo tree toggle" },
+			{ "<leader>u", ":UndotreeToggle | UndotreeFocus<CR>", desc = "Undo tree toggle", silent = true},
 		},
 	},
 

@@ -43,11 +43,6 @@ return {
 	"folke/neodev.nvim",
 	"williamboman/mason.nvim", -- LSP manager
 	"williamboman/mason-lspconfig.nvim",
-	"hrsh7th/nvim-cmp", -- Autocompletion plugin
-	"hrsh7th/cmp-nvim-lsp", -- LSP source for nvim-cmp
-	"saadparwaiz1/cmp_luasnip", -- Snippets source for nvim-cmp
-	"L3MON4D3/LuaSnip", -- Snippets plugin
-	"onsails/lspkind.nvim", -- icons
 	"j-hui/fidget.nvim", -- LSP loading info
 	"jose-elias-alvarez/null-ls.nvim", -- LSP diagnostics, code actions, formatting
 }

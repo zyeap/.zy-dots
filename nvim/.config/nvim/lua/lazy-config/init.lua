@@ -26,7 +26,6 @@ require("lazy").setup("plugins", {
 			init = " ",
 			import = " ",
 			keys = " ",
-			lazy = "⏾ ",
 			loaded = "●",
 			not_loaded = "○",
 			plugin = " ",

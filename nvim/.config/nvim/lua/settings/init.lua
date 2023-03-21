@@ -46,6 +46,5 @@ map("n", "<S-l>", ":BufferLineCycleNext<CR>", opts)
 map("n", "<S-h>", ":BufferLineCyclePrev<CR>", opts)
 
 -- Colorscheme
-global.everforest_background = "soft"
-vim.cmd([[colorscheme everforest]])
-vim.cmd([[highlight IndentBlanklineContextChar guifg=#a7c080 gui=nocombine]])
+vim.cmd([[colorscheme catppuccin-frappe]])
+vim.cmd([[highlight IndentBlanklineContextChar guifg=#f4b8e4 gui=nocombine]])

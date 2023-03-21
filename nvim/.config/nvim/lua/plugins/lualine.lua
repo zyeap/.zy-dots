@@ -3,7 +3,6 @@ local lualine_config = {
 	options = {
 		component_separators = { left = "", right = "" },
 		section_separators = { left = "", right = "" },
-		theme = "everforest",
 	},
 	sections = {
 		lualine_x = { "encoding", "filetype" },

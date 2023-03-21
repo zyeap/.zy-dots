@@ -1,6 +1,9 @@
 return {
 	-- UI/efficiency related plugins
-	"sainnhe/everforest",
+	{
+		"catppuccin/nvim",
+		name = "catppuccin",
+	},
 	{
 		"kyazdani42/nvim-web-devicons",
 		event = "VeryLazy",

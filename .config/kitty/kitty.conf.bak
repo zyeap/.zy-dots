@@ -7,9 +7,7 @@ bold_font	Sauce Code Pro Bold Nerd Font Complete
 italic_font	Sauce Code Pro Medium Italic Nerd Font Complete 
 font_size	13.0
 
-
-
 # BEGIN_KITTY_THEME
-# Catppuccin-Frappe
+# Catppuccin-Macchiato
 include current-theme.conf
 # END_KITTY_THEME

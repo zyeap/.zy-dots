@@ -29,6 +29,9 @@ local opts = { noremap = true, silent = true }
 global.mapleader = " "
 global.maplocalleader = " "
 
+-- vim-go plugin overrides ctrl-t mapping with :GoDefPop, but I use ctrl-t to toggle floating terminal
+global.go_def_mapping_enabled = 0
+
 -- syntax: mode, keybinding, command, options
 map("", "<C-h>", "<C-w>h", opts)
 map("", "<C-j>", "<C-w>j", opts)

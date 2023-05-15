@@ -5,6 +5,7 @@ export FZF_DEFAULT_OPTS=" \
 --color=marker:#f2d5cf,fg+:#c6d0f5,prompt:#ca9ee6,hl+:#e78284"
 export PATH=$PATH:~/.config/diff-so-fancy
 PATH="$HOME/.local/bin:$PATH"
+export PATH=$PATH:/usr/local/go/bin
 
 plugins=(
         git

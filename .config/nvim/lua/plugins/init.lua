@@ -27,6 +27,10 @@ return {
 		ft = "python",
 	},
 	{
+		"fatih/vim-go",
+		ft = "go"
+	},
+	{
 		"mbbill/undotree", -- view past undo changes in side tree view
 		keys = {
 			{ "<leader>u", ":UndotreeToggle | UndotreeFocus<CR>", desc = "Undo tree toggle", silent = true},

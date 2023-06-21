@@ -33,15 +33,18 @@ return {
 	{
 		"mbbill/undotree", -- view past undo changes in side tree view
 		keys = {
-			{ "<leader>u", ":UndotreeToggle | UndotreeFocus<CR>", desc = "Undo tree toggle", silent = true},
+			{ "<leader>u", ":UndotreeToggle | UndotreeFocus<CR>", desc = "Undo tree toggle", silent = true },
 		},
 	},
 
 	-- LSP configuration plugins
 	"neovim/nvim-lspconfig",
 	"folke/neodev.nvim",
-	"williamboman/mason.nvim", -- LSP manager
+	"williamboman/mason.nvim",  -- LSP manager
 	"williamboman/mason-lspconfig.nvim",
-	"j-hui/fidget.nvim", -- LSP loading info
 	"jose-elias-alvarez/null-ls.nvim", -- LSP diagnostics, code actions, formatting
+	{
+		"j-hui/fidget.nvim", -- LSP loading info
+		tag = "legacy"
+	}
 }

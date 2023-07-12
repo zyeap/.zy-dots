@@ -35,7 +35,7 @@ ins_right({
 ins_right({
 	function()
 		local tabstop = vim.api.nvim_buf_get_option(0, "tabstop")
-		return "" .. " " .. tabstop
+		return "->" .. " " .. tabstop
 	end,
 })
 

@@ -46,5 +46,8 @@ return {
 	{
 		"j-hui/fidget.nvim", -- LSP loading info
 		tag = "legacy"
-	}
+	},
+
+	-- extras
+	"christoomey/vim-tmux-navigator"
 }

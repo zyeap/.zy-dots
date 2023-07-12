@@ -31,6 +31,7 @@ alias sf='fdfind --type f --hidden --exclude .git | fzf-tmux -p --reverse | xarg
 alias gfob='git fetch origin && git pull --rebase'
 alias icat="kitty +kitten icat"
 alias lg="lazygit"
+alias cl="clear"
 eval "$(starship init zsh)"
 
 # --------------------------------------

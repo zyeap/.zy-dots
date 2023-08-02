@@ -6,6 +6,7 @@ export FZF_DEFAULT_OPTS=" \
 export PATH=$PATH:~/.config/diff-so-fancy
 PATH="$HOME/.local/bin:$PATH"
 export PATH=$PATH:/usr/local/go/bin
+export PATH=$PATH:~/go/bin
 
 plugins=(
         git
@@ -32,6 +33,8 @@ alias gfob='git fetch origin && git pull --rebase'
 alias icat="kitty +kitten icat"
 alias lg="lazygit"
 alias cl="clear"
+alias go='grc go'
+alias gt='grc go test -v -cover'
 eval "$(starship init zsh)"
 
 # --------------------------------------

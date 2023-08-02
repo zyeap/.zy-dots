@@ -4,7 +4,7 @@ local formatting = null_ls.builtins.formatting
 
 -- sources for formatting, must be installed locally
 local sources = {
-	formatting.autopep8,
+	formatting.black,
 	formatting.stylua,
 	formatting.yamlfmt,
 }

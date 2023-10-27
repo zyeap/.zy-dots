@@ -34,7 +34,7 @@ alias icat="kitty +kitten icat"
 alias lg="lazygit"
 alias cl="clear"
 alias go='grc go'
-alias gt='grc go test -v -cover'
+alias gt='grc go test -cover'
 eval "$(starship init zsh)"
 
 # --------------------------------------
